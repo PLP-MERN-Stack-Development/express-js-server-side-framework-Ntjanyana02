@@ -1,0 +1,17 @@
+{
+  "name": "express-products-api",
+  "version": "1.0.0",
+  "description": "Week 2: Express.js REST API with CRUD, middleware, and error handling",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  }
+}

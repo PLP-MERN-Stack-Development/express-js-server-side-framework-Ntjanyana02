@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // server.js - Starter Express server for Week 2 assignment
 
 // Import required modules
@@ -69,3 +70,24 @@ app.listen(PORT, () => {
 
 // Export the app for testing purposes
 module.exports = app; 
+=======
+import express from "express";
+import bodyParser from "body-parser";
+import dotenv from "dotenv";
+import logger from "./middleware/logger.js";
+import auth from "./middleware/auth.js";
+import errorHandler from "./middleware/error.js";
+import productsRouter from "./routes/products.js";
+
+dotenv.config();
+const app = express();
+app.use(bodyParser.json());
+app.use(logger);
+app.get("/", (req, res) => res.json({ message: "Hello World" }));
+app.use("/api", auth);
+app.use("/api/products", productsRouter);
+app.use((req, res) => res.status(404).json({ error: "Not Found" }));
+app.use(errorHandler);
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`✅ Server listening on http://localhost:${port}`));
+>>>>>>> 312dc1d (Week 2: Express.js REST API with middleware and README setup)

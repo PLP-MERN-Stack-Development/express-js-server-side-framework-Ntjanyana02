@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Express.js RESTful API Assignment
 
 This assignment focuses on building a RESTful API using Express.js, implementing proper routing, middleware, and error handling.
@@ -60,3 +61,19 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [Express.js Documentation](https://expressjs.com/)
 - [RESTful API Design Best Practices](https://restfulapi.net/)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) 
+=======
+# Express Products API
+
+## Setup
+1. Install dependencies: `npm install`
+2. Copy `.env.example` to `.env` and set `API_KEY`
+3. Start server: `npm start`
+
+## Endpoints
+- GET /api/products
+- GET /api/products/:id
+- POST /api/products
+- PUT /api/products/:id
+- DELETE /api/products/:id
+- GET /api/products/stats/summary
+>>>>>>> 312dc1d (Week 2: Express.js REST API with middleware and README setup)
